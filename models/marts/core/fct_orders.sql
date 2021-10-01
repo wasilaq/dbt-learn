@@ -16,7 +16,7 @@ final as (
         orders.order_id,
         orders.order_date,
         orders.customer_id,
-        sum(payments.amount) as total
+        sum(payments.amount) as order_total
 
     from orders
 
